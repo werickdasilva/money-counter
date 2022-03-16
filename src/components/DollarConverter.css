@@ -1,0 +1,58 @@
+.DollarConverter {
+    max-width: 500px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.DollarConverter h1 {
+    text-align: center;
+    font-size: 2.3em;
+    padding-top: 10px;
+}
+
+.DollarConverter div {
+    display: grid;
+    grid-template-areas: 
+            "label label"
+            "input-number btn"
+            "response response";
+}
+
+.DollarConverter div label {
+    grid-area: label;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.DollarConverter div input[type="number"] {
+    grid-area: input-number;
+    padding: 4px;
+    padding-left: 6px;
+    outline: none;
+    width: 80%;
+    font-size: 1.3em;
+}
+
+.DollarConverter div input[type="submit"] {
+    grid-area: btn;
+    background: transparent;
+    color: #7952b3;
+    border: 1px solid #7952b3;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    transition: background-color .8s;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.DollarConverter div input[type="submit"]:hover{
+    background-color: #7952b3;
+    color: #fff;
+}
+.DollarConverter div p {
+    grid-area: response;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
